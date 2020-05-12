@@ -1,0 +1,29 @@
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 12px 32px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tag-green {
+  color: white;
+  background: green;
+}
+
+.tag-grey {
+  color: black;
+  background: #cecece;
+}
