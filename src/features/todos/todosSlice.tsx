@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, Dispatch } from "@reduxjs/toolkit";
 import {} from ".";
 import { RootState } from "../../app/store";
 
@@ -32,7 +32,7 @@ export const todosSlice = createSlice({
 
 export const { setLoading, setSuccess, setFailure } = todosSlice.actions;
 
-export const fetchTodos = () => async (dispatch) => {
+export const fetchTodos = () => async (dispatch: Dispatch) => {
   try {
     dispatch(setLoading());
     const response = await fetch("https://jsonplaceholder.typicode.com/todos");
